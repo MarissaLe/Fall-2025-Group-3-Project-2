@@ -26,3 +26,34 @@ This is an important question because it digs deeper into the public health ineq
 <img width="626" height="390" alt="image" src="https://github.com/user-attachments/assets/c03d54e9-3e10-42fa-8fd0-49d0daffe4b5" />
 
 <img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/2b30099f-a248-4b73-8f53-b552a3e5c68e" />
+
+## Data Manipulation
+
+There was no data manipulation necessary for this question. The question used the minimal and standard data preparation steps that are given to us by Tableau. The data is filtered to only use the specific years 1999, 2005, 2011, and 2017 as well as filtering Hawaii and Mississippi as the lowest and highest age-adjusted death rates states. The data was also aggregated using the SUM functions in order to compare overall death counts and age-adjusted rates across the states.
+
+## Analysis
+
+We mapped out the total death amount as well as the age-adjusted death rates by state from 1999 to 2017 and compared the two maps. For the non-adjusted death count, California had the highest total with 8,169,513 deaths. On the other hand, Alaska had the lowest total of 117,890 deaths. This seems to make sense because California is known to have a significantly larger population than other states and the latter is true for states like Alaska that are less populated. To overcome this measured deception, there is an age-adjusted death rate in the dataset that takes the total number of deaths and divides it per 100,000 people based on the population’s ages. This gives us new data to work with as Mississippi now shows the highest rate (33,327 deaths) and Hawaii shows the lowest rate (20,723). The leading causes for both rates were shown to be heart disease and cancer. The main takeaway from this analysis is that standardization is important in accurately showing impressions on health outcomes across America. To conclude, age-adjusted rates standardize for population age structure, making comparisons fair across states with different demographics.
+
+# Question 2
+
+Have any causes of death had an increase in rates over the past decade, what are those rates, and what are they projected to increase over the next 8 years?
+
+This question is important because it exposes on a national level what causes of death are still most prevalent and worsening. If you look at an aggregate death rate analysis, it seems that the rates have decreased over time, but we wanted to take a closer look to see where the problem still lies. The question provides information on what underlying issues in society might still be posing issues, and what macro factor will be impacted most. For example, with suicide, do we need more investment in therapy and personal care resources? With Alzheimer's, will we need to prepare for more memory care facility capacity? It provides information on where further investments need to be made to prepare, and what areas need to be focused on in reducing the rates for the future. 
+
+<img width="629" height="368" alt="image" src="https://github.com/user-attachments/assets/fd7394ca-888c-422a-aac7-67bcc52142a6" />
+
+<img width="626" height="351" alt="image" src="https://github.com/user-attachments/assets/d45f14eb-886b-4ecd-bb4c-f31fce2d3d2d" />
+
+## Data Manipulation
+
+We Performed an 8 year forecast to see the projected numbres at the current rate of increase. We also had to change the age-adjusted death rate from sum to average to make sure the rate was accurate. This value was already a rate of increase, so having sum was incorrect. We then filtered down the data heavily to ensure a forecast could be completed. Initially, a forecast wasn't possible due to the amount of data. We created a slope value to determine which rate of increase was most valid.
+
+WINDOW_CORR(
+    INDEX(),
+    SUM([Age-adjusted Death Rate])
+)
+
+## Analysis
+
+When looking at the full forecast chart, unintentional injuries have risen from 38.24 to 52.27 deaths per 100,000, with a forecasted increase to 56.63 at an annual growth rate of 2.04%. This trend may be driven by factors such as distracted driving, increased falls among the elderly, and rising overdose incidents, suggesting a need for stronger prevention efforts. Alzheimer’s disease shows an even sharper increase, climbing from 17.48 to 30.91 and projected to reach 36.34, growing at 4.27% per year. As people live longer and research continues to improve, communities will need to expand memory-care capacity and support systems. Suicide rates have also grown—from 11.74 to 15.54 with a forecast of 18.27—reflecting a 1.8% annual increase and highlighting the need for expanded mental-health resources, therapists, and community supports. A key limitation of this analysis is that the dataset does not provide the underlying causes driving these trends, which restricts deeper interpretation
