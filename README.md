@@ -1,6 +1,5 @@
 # Fall-2025-Group-3-Project-2
 
-# Fall-2025-Group-3
 MIST 4610 Dr. Sri Fall 2025 Group 3 Section 2
 
 ## Team Name
