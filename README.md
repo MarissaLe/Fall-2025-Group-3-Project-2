@@ -40,9 +40,9 @@ Have any causes of death had an increase in rates over the past decade, what are
 
 This question is important because it exposes on a national level what causes of death are still most prevalent and worsening. If you look at an aggregate death rate analysis, it seems that the rates have decreased over time, but we wanted to take a closer look to see where the problem still lies. The question provides information on what underlying issues in society might still be posing issues, and what macro factor will be impacted most. For example, with suicide, do we need more investment in therapy and personal care resources? With Alzheimer's, will we need to prepare for more memory care facility capacity? It provides information on where further investments need to be made to prepare, and what areas need to be focused on in reducing the rates for the future. 
 
-<img width="629" height="368" alt="image" src="https://github.com/user-attachments/assets/fd7394ca-888c-422a-aac7-67bcc52142a6" />
+<img width="2446" height="1362" alt="image" src="https://github.com/user-attachments/assets/31e9f3a3-73e6-4270-b181-94e790fd6438" />
 
-<img width="626" height="351" alt="image" src="https://github.com/user-attachments/assets/d45f14eb-886b-4ecd-bb4c-f31fce2d3d2d" />
+<img width="2442" height="1360" alt="image" src="https://github.com/user-attachments/assets/024981a2-1974-4633-a815-5a6a6eb02640" />
 
 ## Data Manipulation
 
